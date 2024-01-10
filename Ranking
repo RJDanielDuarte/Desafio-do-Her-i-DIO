@@ -1,0 +1,26 @@
+// Recebendo os parâmetros de vitórias e derrotas
+
+let partidasGanhas = prompt("Coloque aqui quantas partidas você ganhou");
+let partidasPerdidas = prompt("Coloque aqui quantas partidas você perdeu");
+
+let vitórias = subtração(partidasGanhas,partidasPerdidas);
+
+function subtração(numA, numB){ 
+    let subtraindo = numA - numB
+    return subtraindo}
+
+//Recebendo o Ranking
+
+let nível;
+
+if (vitórias<= 10) {nível = "Ferro";}
+ else if (vitórias<= 11 && vitórias<= 20) {nível = "Bronze";}
+ else if (vitórias<= 21 && vitórias<= 50) {nível = "Prata";}
+ else if (vitórias<= 51 && vitórias<= 80) {nível = "Ouro";}
+ else if (vitórias<= 81 && vitórias<= 90) {nível = "Diamante";}
+ else if (vitórias<= 91 && vitórias<= 100) {nível = "Lendário";}
+ else if (vitórias=> 101) {nível = "Imortal";}
+ 
+// Retorno do jogador
+
+console.log("O Heróis tem de saldo de ${vitórias} está no no nível ${nível}");
